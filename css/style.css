@@ -86,13 +86,13 @@ p {
   background-size: cover;
 }
 
-.view:active {
+.view:hover {
   width: 100%;
   background: url(/images/image-equilibrium.jpg) no-repeat;
   background-size: cover;
 }
 
-.view:active img {
+.view:hover img {
   display: none;
 }
 
