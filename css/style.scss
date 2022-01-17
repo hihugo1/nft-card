@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --paragrafos: hsl(215, 51%, 70%);
+    --destaque: rgb(0, 255, 247);
+    --background-body: hsl(217, 54%, 11%);
+    --background-card: hsl(215, 51%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background-color:  var(--background-body)
+}
+
+.card{
+    display: flex;
+    background-color: var(--background-card);
+    width: 350px;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+span, a{
+    color: var(--destaque);
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+p{
+    font-weight: 300;
+    color: var(--paragrafos);
+}
+
+.view{
+    background: linear-gradient(rgb(0, 255, 247), rgb(0, 255, 247)), url("/images/icon-view.svg");
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+
+    img{
+        position: relative;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+    }
+
+    &::before{
+        content: " ";
+        width: 100%;
+        filter: opacity(10%);
+    }
+
+    &::after{
+        content: "";
+        width: 100%;
+        filter: opacity(10%);
+        background: url(/images/image-equilibrium.jpg) no-repeat;
+        background-size: cover;
+
+    }
+
+    &:active{
+        width: 100%;
+        background: url(/images/image-equilibrium.jpg) no-repeat;
+        background-size: cover;
+
+        img{
+            display: none;
+        }
+    }
+}
+
+.ether{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+
+
+    span{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+
+}
+
+.creator{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    border-top: 1px solid var(--paragrafos);
+    padding: 15px 0;
+    align-items: center;
+    img{
+        width: 30px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px){
+    .card{
+        width: 100vw;
+        margin: 10px 0;
+    }
+
+}

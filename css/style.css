@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --paragrafos: hsl(215, 51%, 70%);
+  --destaque: rgb(0, 255, 247);
+  --background-body: hsl(217, 54%, 11%);
+  --background-card: hsl(215, 51%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--background-body);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--background-card);
+  width: 350px;
+  padding: 1rem;
+  border-radius: 5px;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 30px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+span, a {
+  color: var(--destaque);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+  color: var(--paragrafos);
+}
+
+.view {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00fff7), to(#00fff7)), url("/images/icon-view.svg");
+  background: linear-gradient(#00fff7, #00fff7), url("/images/icon-view.svg");
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view img {
+  position: relative;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+}
+
+.view::before {
+  content: " ";
+  width: 100%;
+  -webkit-filter: opacity(10%);
+          filter: opacity(10%);
+}
+
+.view::after {
+  content: "";
+  width: 100%;
+  -webkit-filter: opacity(10%);
+          filter: opacity(10%);
+  background: url(/images/image-equilibrium.jpg) no-repeat;
+  background-size: cover;
+}
+
+.view:active {
+  width: 100%;
+  background: url(/images/image-equilibrium.jpg) no-repeat;
+  background-size: cover;
+}
+
+.view:active img {
+  display: none;
+}
+
+.ether {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.ether span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 10px;
+  border-top: 1px solid var(--paragrafos);
+  padding: 15px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creator img {
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100vw;
+    margin: 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
