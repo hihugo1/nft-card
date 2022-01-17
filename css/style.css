@@ -40,7 +40,7 @@ body {
   display: flex;
   background-color: var(--background-card);
   width: 350px;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 5px;
   gap: 10px;
   -webkit-box-orient: vertical;
@@ -55,6 +55,7 @@ body {
 span, a {
   color: var(--destaque);
   font-weight: 600;
+  margin: 10px 0 0 0;
   text-decoration: none;
 }
 
