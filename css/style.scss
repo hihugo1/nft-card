@@ -62,16 +62,10 @@ p{
         left: calc(50% - 30px);
     }
 
-    &::before{
-        content: " ";
-        width: 100%;
-        filter: opacity(10%);
-    }
 
     &::after{
         content: "";
         width: 100%;
-        filter: opacity(10%);
         background: url(/images/image-equilibrium.jpg) no-repeat;
         background-size: cover;
 

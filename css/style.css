@@ -78,18 +78,9 @@ p {
   left: calc(50% - 30px);
 }
 
-.view::before {
-  content: " ";
-  width: 100%;
-  -webkit-filter: opacity(10%);
-          filter: opacity(10%);
-}
-
 .view::after {
   content: "";
   width: 100%;
-  -webkit-filter: opacity(10%);
-          filter: opacity(10%);
   background: url(/images/image-equilibrium.jpg) no-repeat;
   background-size: cover;
 }
